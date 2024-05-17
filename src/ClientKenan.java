@@ -6,14 +6,14 @@ public class ClientKenan {
 
         Socket client = null;
 
-        int portnumber = 47910;
+        int portnumber = 80;
         if(args.length >= 1){
             portnumber = Integer.parseInt(args[0]);
         }
 
         for( int i = 0; i < 10; i++){
             try{
-                String msg = "";
+                String msg = "HAIIIIIIIIIIII";
 
                 client = new Socket(InetAddress.getLocalHost(), portnumber);
                 System.out.println("Client socket is created " + client);
